@@ -26,7 +26,7 @@ context master {
         supplier        : Association to Suppliers;
         Order_Details       : Composition of many transactional.OrderDetails on Order_Details.product = $self;
     };
-
+    
     entity Categories : cuid, managed {
         CategoryName : String(100) not null;
         CategoryID   : Int16 default 1;

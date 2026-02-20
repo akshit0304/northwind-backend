@@ -52,7 +52,6 @@ modules:
       build-result: app/
       requires:
 
-
 resources:
   - name: backend-auth
     type: org.cloudfoundry.managed-service

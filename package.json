@@ -6,11 +6,15 @@
     "@cap-js/hana": "^2",
     "@sap/cds": "^9",
     "@sap/xssec": "^4",
-    "express": "^4"
+    "cds-swagger-ui-express": "^0.10.0",
+    "express": "^4",
+    "@cap-js/console": "^1.0.0"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2",
-    "@sap/cds-dk": "^9"
+    "@sap/cds-dk": "^9",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "scripts": {
     "start": "cds-serve"
@@ -18,24 +22,37 @@
   "private": true,
   "cds": {
     "requires": {
-      "db":{
+      "db": {
         "kind": "sqlite",
         "credentials": {
-          "url":"db.sqlite"
+          "url": "db.sqlite"
         },
         "schema_evolution": "auto"
       },
+      "auth": {
+          "kind":"basic",
+          "restrict_all_services": true
+        }, 
       "[production]": {
         "auth": "xsuaa"
       },
       "[hybrid]": {
-        "auth": "jwt",
+        "auth": {
+          "kind":"jwt",
+          "restrict_all_services": true
+        }, 
         "db": {
           "kind": "hana"
         }
       },
       "destinations": true,
-      "html5-repo": true
+      "html5-repo": true,
+      "swagger": {
+        "basePath": "/$api-docs",
+        "apiPath": "/",
+        "diagram": true,
+        "odataVersion": "4.0"
+      }
     }
   }
 }
