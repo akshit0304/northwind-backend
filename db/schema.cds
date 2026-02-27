@@ -80,10 +80,10 @@ context master {
 
     entity Territories : cuid,managed {
         RegionID: Int16;
-        TerritoryID :Int16;
         region: Association to Regions;
         employees : Association to many  Employees on employees.territory =$self;
         Description :String(250) NOT NULL;
+        TerritoryID :Int16;
     }
 
     entity Employees : cuid,managed {
@@ -137,16 +137,16 @@ context transactional {
         ShipPostalCode  : String(15);
         ShipCountry     : String(50);
         OrderID         : Int16;
-        CustomerID      : Int16;
+        CustomerID      : String(15);
         EmployeeID      : Int16;
         ShipViaID :Int16;
         
-        QuantityPerUnit : String(20);
-        UnitPrice       : Decimal(15, 2);
-        UnitsInStock    : Int16;
-        UnitsOnOrder    : Int16;
-        ReorderLevel    : Int16;
-        Discontinued    : Int16;
+        // QuantityPerUnit : String(20);
+        // UnitPrice       : Decimal(15, 2);
+        // UnitsInStock    : Int16;
+        // UnitsOnOrder    : Int16;
+        // ReorderLevel    : Int16;
+        // Discontinued    : Int16;
     }
 
 

@@ -1,0 +1,7 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+INSERT INTO bd_bModel_master_Regions VALUES('5a13ea79-2b5f-4996-a5a0-d36b6386421d',NULL,NULL,NULL,NULL,1,'Eastern');
+INSERT INTO bd_bModel_master_Regions VALUES('8bcddb31-d06a-4911-9fb6-6a08920afac9',NULL,NULL,NULL,NULL,2,'Western');
+INSERT INTO bd_bModel_master_Regions VALUES('66291784-b0d0-4019-8950-d78feb882f3a',NULL,NULL,NULL,NULL,3,'Northern');
+INSERT INTO bd_bModel_master_Regions VALUES('50c51923-5dac-4f6c-9df5-3a43730ef18c',NULL,NULL,NULL,NULL,4,'Southern');
+COMMIT;

@@ -1,0 +1,113 @@
+@server=http://localhost:4004
+@Authorization= basicAuthentication
+@user ='xyz'
+
+
+### Products
+# @name Products_GET
+GET {{server}}/odata/v4/catalog/Products('114995a4-b437-479c-b68d-bd561c459916')
+
+
+
+### Categories
+# @name Categories_GET
+GET {{server}}/odata/v4/catalog/Categories?$expand=products
+# Authorization: Basic userName="alice"
+
+
+
+### Categories
+# @name Categories_POST
+POST {{server}}/odata/v4/catalog/Categories
+Content-Type: application/json
+
+{
+  "CategoryName": "intern",
+  "Description": "total 3 interns",
+  "products":{
+    "ProductName":"jay"
+  }
+}
+
+
+### Categories
+# @name Categories_PATCH
+PATCH {{server}}/odata/v4/catalog/Categories/33721436-a0e7-428b-a8d1-6b59ba220344
+Content-Type: application/json
+
+{
+  "ID": "33721436-a0e7-428b-a8d1-6b59ba220344",
+  "CategoryName": "CategoryName-3372143",
+  "CategoryID": 46,
+  "Description": "Description-3372143",
+  "createdAt": "2006-02-12T00:00:00.000Z",
+  "createdBy": "createdBy.209yn@example.net",
+  "modifiedAt": "2010-07-15T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.209yn@example.org"
+}
+
+
+### Categories
+# @name Categories_DELETE
+DELETE {{server}}/odata/v4/catalog/Categories/33721436-a0e7-428b-a8d1-6b59ba220344
+Content-Type: application/json
+
+
+### Customers
+# @name Customers_GET
+GET {{server}}/odata/v4/catalog/Customers
+
+
+
+### Customers
+# @name Customers_POST
+POST {{server}}/odata/v4/catalog/Customers
+Content-Type: application/json
+
+{
+  "ID": "31397588-2c85-4978-8905-e76b87ba0dec",
+  "CustomerID": "omerID-31397588",
+  "CompanyName": "CompanyName-31397588",
+  "ContactName": "ContactName-31397588",
+  "ContactTitle": "ContactTitle-31397588",
+  "Address": "Address-31397588",
+  "City": "City-31397588",
+  "Country": "Country-31397588",
+  "PostalCode": "alCode-31397588",
+  "Phone": "Phone-31397588",
+  "Fax": "Fax-31397588",
+  "createdAt": "2017-05-24T00:00:00.000Z",
+  "createdBy": "createdBy.ioyj8@example.net",
+  "modifiedAt": "2017-02-17T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.ioyj8@example.net"
+}
+
+
+### Customers
+# @name Customers_PATCH
+PATCH {{server}}/odata/v4/catalog/Customers/31397588-2c85-4978-8905-e76b87ba0dec
+Content-Type: application/json
+
+{
+  "ID": "31397588-2c85-4978-8905-e76b87ba0dec",
+  "CustomerID": "omerID-31397588",
+  "CompanyName": "CompanyName-31397588",
+  "ContactName": "ContactName-31397588",
+  "ContactTitle": "ContactTitle-31397588",
+  "Address": "Address-31397588",
+  "City": "City-31397588",
+  "Country": "Country-31397588",
+  "PostalCode": "alCode-31397588",
+  "Phone": "Phone-31397588",
+  "Fax": "Fax-31397588",
+  "createdAt": "2017-05-24T00:00:00.000Z",
+  "createdBy": "createdBy.ioyj8@example.net",
+  "modifiedAt": "2017-02-17T00:00:00.000Z",
+  "modifiedBy": "modifiedBy.ioyj8@example.net"
+}
+
+
+### Customers
+# @name Customers_DELETE
+DELETE {{server}}/odata/v4/catalog/Customers/31397588-2c85-4978-8905-e76b87ba0dec
+Content-Type: application/json

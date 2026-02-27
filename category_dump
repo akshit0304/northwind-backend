@@ -1,0 +1,9 @@
+INSERT INTO bd_bModel_master_Categories VALUES('68f67d3c-afe2-4f11-a473-32a5d253d719','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous','1','Beverages','Soft drinks, coffees, teas, beers, and ales');
+INSERT INTO bd_bModel_master_Categories VALUES('7889b9c8-ce1b-4560-a45d-8c16a3740a92','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous','2','Condiments','Sweet and savory sauces, relishes, spreads, and seasonings');
+INSERT INTO bd_bModel_master_Categories VALUES('f84dc87c-affb-402c-ad51-d55f328eb152','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous','3','Confections','Desserts, candies, and sweet breads');
+INSERT INTO bd_bModel_master_Categories VALUES('f5550c69-4895-4cbb-a17e-c4b28065e818','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous','4','Dairy Products','Cheeses');
+INSERT INTO bd_bModel_master_Categories VALUES('bae1d83c-dada-4d9c-9a83-dcdf2e213d2c','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous','5','Grains/Cereals','Breads, crackers, pasta, and cereal');
+INSERT INTO bd_bModel_master_Categories VALUES('b99f1dce-9501-429f-b92b-0752a0d89ef7','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous','6','Meat/Poultry','Prepared meats');
+INSERT INTO bd_bModel_master_Categories VALUES('2decc9d4-95d0-4b79-91c7-6dc3adbd1a79','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous','7','Produce','Dried fruit and bean curd');
+INSERT INTO bd_bModel_master_Categories VALUES('f5439b8c-113d-4058-ad62-131c7d126ed9','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous','8','Seafood','Seaweed and fish');
+INSERT INTO bd_bModel_master_Categories VALUES('058a4608-f038-4545-ad0f-e631cd4e7676','2026-02-20T07:34:54.770Z','anonymous','2026-02-20T07:34:54.770Z','anonymous','intern',1,'total 3 interns');

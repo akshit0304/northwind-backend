@@ -1,0 +1,6 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+INSERT INTO bd_bModel_master_Shippers VALUES('47a2f778-93e0-47b7-9022-22a53dfccf7f','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous',1,'Speedy Express','(503) 555-9831');
+INSERT INTO bd_bModel_master_Shippers VALUES('717e80ba-169e-4387-9a76-f8a1c3191679','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous',2,'United Package','(503) 555-3199');
+INSERT INTO bd_bModel_master_Shippers VALUES('8ea627a0-40c9-4179-9859-ee8b8c5c0d24','2025-10-27T13:29:22.666Z','anonymous','2025-10-27T13:29:22.666Z','anonymous',3,'Federal Shipping','(503) 555-9931');
+COMMIT;
